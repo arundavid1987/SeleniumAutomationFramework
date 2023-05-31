@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <listeners>
+  <listener class-name="com.utils.ExtentListeners"></listener>
+  </listeners>
+  <parameter name="os" value="windows"/>
+  <parameter name="node" value="https://www.amazon.in/"/>
+  <parameter name="url" value="https://www.amazon.in/"/>
+  <parameter name="browser" value="chrome"/>
+   
+   <test name="Amazon Application " preserve-order="true">   	
+        <classes>
+            <class name="com.example.testcases.AmazonSimpleTest"/>
+            <class name="com.example.testcases.AmazonCommonDataTest"/>
+            <class name="com.example.testcases.AmazonDataProviderTest"/>
+        </classes>
+    </test>
+</suite>  

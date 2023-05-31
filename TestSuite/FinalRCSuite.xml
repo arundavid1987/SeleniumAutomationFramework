@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ComponentSuite">
+ <listeners>
+  <listener class-name="com.utils.ExtentListeners"></listener>
+ </listeners>
+
+ <parameter name="os" value="windows"/>
+ <parameter name="node" value="http://localhost:4444"/>
+ <parameter name="browser" value="chrome"/>
+ 
+ <parameter name="urlactions" value="https://webdriveruniversity.com/Actions/index.html"/>   
+ <parameter name="urlAlert" value="https://webdriveruniversity.com/Popup-Alerts/index.html"/> 
+ <parameter name="urlAutoComplete" value="https://demoqa.com/auto-complete"/> 
+ <parameter name="urlCalendar" value="https://letcode.in/calendar"/>
+ <parameter name="urlCanvasTest" value="https://testpages.herokuapp.com/styled/canvas-javascript-test.html"/> 
+ <parameter name="urlModalDialogs" value="https://demoqa.com/modal-dialogs"/>
+ <parameter name="urlSortable" value="https://demoqa.com/sortable"/>
+ <parameter name="urlUpload" value="https://the-internet.herokuapp.com/upload"/>
+ <parameter name="urlDownload" value="https://the-internet.herokuapp.com/download"/>
+ <parameter name="urlDropdown" value="https://demoqa.com/select-menu"/>
+ <parameter name="urlMultipleTabs" value="https://demoqa.com/browser-windows"/> 
+ <parameter name="urlTable" value="https://letcode.in/table"/> 
+ <parameter name="urlTooltip" value="https://demoqa.com/tool-tips"/> 
+ <parameter name="urlProgressBar" value="https://testpages.herokuapp.com/styled/progress-bars-sync.htmls"/> 
+ <parameter name="urlJavascriptEvent" value="https://testpages.herokuapp.com/styled/events/javascript-events.html"/> 
+ <parameter name="urlWaitAlert" value=" https://letcode.in/waits"/> 
+ <parameter name="urlSlow" value="https://the-internet.herokuapp.com/slow" />
+ <parameter name="urlNotificationMessage" value="https://the-internet.herokuapp.com/notification_message_rendered" />
+ <parameter name="urlScrollBar" value="https://the-internet.herokuapp.com/infinite_scroll" />
+ <parameter name="urlDynamicProperties" value="https://demoqa.com/dynamic-properties"/> 
+ <parameter name="urlDatatable" value="https://datatables.net/"/> 
+ <parameter name="urlDisAppearingElement" value="https://the-internet.herokuapp.com/disappearing_elements"/> 
+ <parameter name="urlShadowDom" value="https://the-internet.herokuapp.com/shadowdom"/> 
+ <parameter name="urliframe" value="https://the-internet.herokuapp.com/frames"/> 
+ <parameter name="urlMenu" value="https://demoqa.com/menu"/> 
+ <parameter name="urlTabs" value="https://demoqa.com/tabs"/>  
+ <parameter name="urlButtons" value="https://letcode.in/buttons"/> 
+ <parameter name="urlAzaxLoading" value="https://the-internet.herokuapp.com/dynamic_loading/1"/>
+ <parameter name="urlJqueryMenu" value="https://the-internet.herokuapp.com/jqueryui/menu"/>
+  
+ <test name="Alert Component Test" preserve-order="true">   	
+        <classes>
+          
+			<class name="com.component.testcases.withjar.ActionsTest"/>
+			<class name="com.component.testcases.withjar.AlertpopUpTest"/>
+			<class name="com.component.testcases.withjar.AutoCompleteTextTest"/>
+			<class name="com.component.testcases.withjar.AzaxLoadingTest"/>
+			<class name="com.component.testcases.withjar.BasicAuthTest"/>
+			<class name="com.component.testcases.withjar.CalendarTest"/>
+			<class name="com.component.testcases.withjar.CanvasTest"/>
+			<class name="com.component.testcases.withjar.DropdownTest"/>
+			<class name="com.component.testcases.withjar.DynamicElementsTest"/>
+			<class name="com.component.testcases.withjar.FileDownloadTest"/>
+			<class name="com.component.testcases.withjar.FileUploadTest"/>
+			<class name="com.component.testcases.withjar.InteractWithButtonsTest"/>
+			<class name="com.component.testcases.withjar.JavaScriptEventTest"/>
+			<class name="com.component.testcases.withjar.JqueryUIMenuTest"/>
+			<class name="com.component.testcases.withjar.MenuHandlingTest"/>
+			<class name="com.component.testcases.withjar.ModalDialogTest"/>
+			<class name="com.component.testcases.withjar.MultipleTabTest"/>
+			<class name="com.component.testcases.withjar.NotificationMessageTest"/>
+			<class name="com.component.testcases.withjar.PaginationTest"/>
+			<class name="com.component.testcases.withjar.ProgressbarTest"/>
+			<class name="com.component.testcases.withjar.ScrollBarsTest"/>
+			<class name="com.component.testcases.withjar.ShadowDomTest"/>
+			<class name="com.component.testcases.withjar.SliderTest"/>
+			<class name="com.component.testcases.withjar.SlowLoadIssueTest"/>
+			<class name="com.component.testcases.withjar.SortableTest"/>
+			<class name="com.component.testcases.withjar.TablesTest"/>
+			<class name="com.component.testcases.withjar.TabTest"/>
+			<class name="com.component.testcases.withjar.ToolTipTest"/>
+			<class name="com.component.testcases.withjar.ValidateElementExistTest"/>
+			<class name="com.component.testcases.withjar.WaitAlertsTest"/>
+			
+       </classes>
+ </test>
+</suite>  
