@@ -57,7 +57,7 @@
     <artifactId>ReusableComponents</artifactId>
     <scope>system</scope>
     <version>3.0</version>
-     <systemPath>${pom.basedir}\lib\ReusableComponents-3.0.jar</systemPath>
+     <systemPath>${basedir}\lib\ReusableComponents-3.0.jar</systemPath>
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
